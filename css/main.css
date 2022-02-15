@@ -7,7 +7,7 @@
 body {
 	width: 100%;
 	max-width: 1440px;
-	font-size: 0.8125em;
+	font-size: 16px;
 	background: hsl(210, 46%, 95%);
 	font-family: 'Biryani', sans-serif;;
 }
@@ -21,59 +21,59 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 900px;
-	height: 400px;
+	width: 56.25rem;
+	height: 25rem;
 }
 
 .article_container {
 	display: flex;
 	flex-direction: row;
-	width: 800px;
-	height: 300px;
+	justify-content: space-between;
+	width: 56.25rem;
+	height: 20rem;
 	border: 1px #FFFFFF;
 	background: #FFFFFF;
 	border-radius: 10px;
 	overflow: hidden;
+	
 }
 
 #main_article {
-	margin: 35px 25px 0;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	
 }
 
-h3 {
-	font-size: 175%;
+h1 {
+	font-size: 1.5rem;
 	font-weight: 700;
-	line-height: 1.3;
-	padding: 10px;
 	color: hsl(217, 19%, 35%);
+	margin: 45px 31px 15px;
 }
 
 p {
-	padding: 10px;
-	font-size: 118%;
+	font-size: 1.12rem;
 	font-weight: 500;
-	line-height: 1.5;
+	line-height: 1.3;
 	color: hsl(214, 17%, 51%);
+	margin: 5px 31px 15px;
 }
 
 .aside_image {
-	background-image: url(/images/drawers.jpg);
+	background-image: url(../images/drawers.jpg);
 	background-size: cover;
-	width: 38%;
+	width: 20.4rem;
 }
 
 article {
-	position: relative;
-	width: 62%;
-	justify-content: center;
-	align-content: center;
+	width: 35rem;
 }
 
 #about {
 	display: flex;
 	align-items: center;
-	margin-top: 10px;
-	margin-left: 10px;
+	margin: 5px 31px 15px;
 }
 
 #about > img {
@@ -88,71 +88,68 @@ article {
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
-	margin-left: 15px;
+	margin-left: 19px;
 }
 
-h5 {
-	font-size: 100%;
+h2 {
+	font-size: 0.9rem;
 	font-weight: 700;
 	color: hsl(217, 19%, 35%);
 }
 
 #about span {
-	font-size: 103%;
+	font-size: 0.9rem;
 	font-weight: 500;
 	color: hsl(214, 17%, 51%);
+	margin-top: 5px;
 }
 
 #popup_share {
-	margin-left: 210px;
 	border-radius: 100%;
 	width: 30px;
 	height: 30px;
 	background-color: hsl(210, 46%, 95%);
 	border: none;
+	margin-left: 240px;
 }
 
 #popup_share img {
 	width: 15px;
 }
 
-/* Mobile Design */
-@media (max-width: 415px) {
-	body {
-		width: 100%;
+/**************** Mobile Design **********************/
+@media (max-width: 768px) {
+	main {
+		width: 375px;
 		height: 100%;
 	}
 
-	main {
-		position: absolute;
-		width: 400px;
-		height: 650px;
-	}
-
 	.article_container {
-		width: 90%;
-		height: 90%;
+		width: 365px;
+		height: 35.25rem;
 		display: flex;
 		flex-direction: column;
 	}
 	
 	.aside_image {
-    background-image: url(/images/drawers.jpg);
+    background-image: url(../images/drawers.jpg);
     background-size: cover;
 	width: 100%;
-    height: 40%;
+    height: 15.7rem;
 	}
 
-	h3 {
-		font-size: 140%;
+	h1 {
+		font-size: 120%;
 		line-height: 1.3;
 		padding: 10px;
+		margin: 10px 20px 0;
 	}
 
 	p {
-		font-size: 117%;
+		font-size: 100%;
 		line-height: 1.4;
 		padding: 10px;
+		margin: 0 20px 0;
 	}
 
 	article {
@@ -162,12 +159,12 @@ h5 {
 
 	#about {
     align-items: center;
-    margin-top: 30px;
-    margin-left: 10px;
+    margin-top: 25px;
+    margin-left: 30px;
 	}
 
 	#about > img {
-		height:3.5em
+		height:2.5rem
 	}
 
 	#popup_share {
@@ -178,23 +175,5 @@ h5 {
 
 	#popup_share img {
 	width: 15px;
-	}
-}
-
-@media (max-width: 375px) {
-	.article_container {
-		height: 90%;
-	}
-
-	.aside_image {
-		height: 41%;
-	}
-
-	article {
-		height: 59%;
-	}
-
-	#about {
-		margin-top: 30px;
 	}
 }
